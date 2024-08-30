@@ -3,10 +3,10 @@
 source "https://rubygems.org"
 
 # Jekyll is the main gem for building static websites
-gem "jekyll", "~> 4.3.0"
+gem "jekyll", "~> 3.9.2"
 
 # GitHub Pages specific gems (GitHub Pages runs on these gems)
-gem "github-pages", "~> 227", group: :jekyll_plugins
+gem "github-pages", "~> 228.0", group: :jekyll_plugins
 
 # Optional: Add any additional Jekyll plugins you might need
  gem "jekyll-seo-tag", "~> 2.7"
