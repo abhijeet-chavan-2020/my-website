@@ -1,0 +1,29 @@
+/* Custom Styles */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Home Section */
+#home {
+  background-image: url('../assets/home-bg.jpg'); /* Replace with your own image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+/* Section Headings */
+section h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Footer Links */
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
