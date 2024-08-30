@@ -20,6 +20,10 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
     // Reset form
     document.getElementById('contactForm').reset();
+    document.addEventListener('DOMContentLoaded', (event) => {
+      alert('Welcome to my website!');
+    });
+
 });
 
 // Function to display messages

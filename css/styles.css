@@ -13,6 +13,17 @@ html {
   color: #fff;
 }
 
+body {
+  background-color: #f0f8ff; /* Light Blue */
+  color: #333; /* Darker Text */
+}
+
+.header, .footer {
+  background-color: #4682b4; /* Steel Blue */
+  color: #fff;
+}
+
+
 /* Section Headings */
 section h2 {
   font-weight: bold;
@@ -27,3 +38,18 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+}
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
