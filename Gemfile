@@ -6,7 +6,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3.0"
 
 # GitHub Pages specific gems (GitHub Pages runs on these gems)
-gem "github-pages", group: :jekyll_plugins
+gem "github-pages", "~> 227" group: :jekyll_plugins
 
 # Optional: Add any additional Jekyll plugins you might need
  gem "jekyll-seo-tag", "~> 2.7"
