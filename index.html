@@ -1,271 +1,940 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhijeet Chavan - QA Tech Lead</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/7efcbb47cc.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KSK Chaitanya</title>
+
+    <!-- Favicons
+================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- / Favicons
+================================================== -->
+
+    <!-- >> CSS
+============================================================================== -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Nivo Lightbox -->
+    <link href="vendor/nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/nivo-lightbox/themes/default/default.css" type="text/css" />
+    <!-- /Nivo Lightbox -->
+    <!-- Perfect ScrollBar -->
+    <link href="vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <!-- owl carousel -->
+    <link href="vendor/owl.carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="vendor/owl.carousel/owl-carousel/owl.theme.css" rel="stylesheet">
+    <!-- Main Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- >> /CSS
+============================================================================== -->
 </head>
+
 <body>
-
----
-layout: default
-title: Home
----
-<section id="hero">
-    <h1>Welcome to My Website</h1>
-    <p>Your tagline or description here.</p>
-    <a href="#contact" class="btn">Contact Us</a>
-</section>
-
-<section id="about">
-    <h2>About Us</h2>
-    <p>Information about you or your business.</p>
-</section>
-
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="service">
-        <h3>Service 1</h3>
-        <p>Description of Service 1.</p>
+<!-- Page Loader
+========================================================= -->
+<div class="loader-container" id="page-loader">
+    <div class="loading-wrapper">
+        <div class="loader-animation" id="loader-animation">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <!-- Edit With Your Name -->
+        <div class="loader-name" id="loader-name">
+            <strong>KSK</strong> Chaitanya
+        </div>
+        <!-- /Edit With Your Name -->
+        <!-- Edit With Your Job -->
+        <p class="loader-job" id="loader-job">Full Stack Developer</p>
+        <!-- /Edit With Your Job -->
     </div>
-    <div class="service">
-        <h3>Service 2</h3>
-        <p>Description of Service 2.</p>
-    </div>
-</section>
+</div>
+<!-- /End of Page loader
+========================================================= -->
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <form action="your-form-handler-url" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
+<!-- Main Content
+================================================== -->
+<section id="body" class="body">
 
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Abhijeet Chavan</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <i class="fa-solid fa-user"></i>
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+        <!-- MAIN MENU -->
+        <div class="main-menu" id="main-menu">
+            <ul class="main-menu-list">
+                <li><a href="#section-home" class="link-home">Home</a></li>
+                <li><a href="#page-resume" class="link-page">Resume</a></li>
+                <li><a href="#page-skills" class="link-page">Skills</a></li>
+                <li><a href="#page-portfolio" class="link-page">Website Works</a></li>
+                <li><a href="#page-blog" class="link-page">S/W Projects</a></li>
+
+                <li><a href="#page-contact" class="link-page">Contact</a></li>
             </ul>
         </div>
-    </div>
-</nav>
+        <!-- /MAIN MENU -->
 
-<!-- Home Section -->
-<section id="home" class="vh-100 d-flex align-items-center bg-light">
-    <div class="container text-center">
-        <h1 class="display-4">Abhijeet Chavan</h1>
-        <p class="lead">QA Tech Lead at J.P. Morgan Chase & Co</p>
-        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about1" class="py-5">
-    <div class="container">
-        <div class="card-container">
-            <div class="card">
-        <h2 class="mb-4">About Me</h2>
-        <p>Dedicated QA Tech Lead with over 11 years of experience in software testing, specializing in Banking, Travel Loyalty, and Healthcare domains. Expertise in QA process improvements, team leadership, and automation testing. Recognized for strong analytical abilities, leadership, and excellent communication.</p>
-    </div>
-        </div>
-    </div>
-</section>
-
-<!-- Experience Section -->
-<section id="experience" class="bg-light py-5">
-    <div class="container">
-        <h2 class="mb-4">Experience</h2>
-
-        <!-- J.P. Morgan Chase & Co -->
-        <div class="mb-4">
-            <h3>QA Tech Lead</h3>
-            <h5>J.P. Morgan Chase & Co, Pune | 10/2018 – Present</h5>
-            <ul>
-                <li>Led QA process improvements, mentoring, and skill development, increasing QA performance by 30%.</li>
-                <li>Managed QA teams for large-scale eCommerce, Banking, and Travel Loyalty projects, ensuring zero production defects.</li>
-                <li>Partnered with engineering, QA, and UX teams to identify and implement product enhancements, reducing critical issues by 35%.</li>
-                <li>Developed comprehensive QA documentation, reducing new hire onboarding time from 60 days to 15 days.</li>
-                <li>Implemented a rotating Buddy Process, enhancing knowledge transfer and team cohesion.</li>
-                <li>Coordinated AWS cloud migrations and database encryption testing with AWS KMS.</li>
-                <li>Achieved over 80% sprint automation using Selenium with Cucumber and Java.</li>
-            </ul>
-        </div>
-
-        <!-- Loylogic -->
-        <div class="mb-4">
-            <h3>Test Engineer</h3>
-            <h5>Loylogic, Pune | 04/2017 – 09/2018</h5>
-            <ul>
-                <li>Tested loyalty applications in Travel Loyalty and E-commerce domains, ensuring more than 95% test coverage.</li>
-                <li>Delivered 15 client demos, wrote and executed thousands of test cases, and generated detailed test reports.</li>
-                <li>Mentored junior engineers, created documentation on Confluence, and trained on tools like JIRA, SQL, and Postman.</li>
-            </ul>
-        </div>
-
-        <!-- Allscripts -->
-        <div class="mb-4">
-            <h3>Associate Quality Engineer</h3>
-            <h5>Allscripts, Pune | 06/2013 – 09/2014 & 11/2015 – 03/2017</h5>
-            <ul>
-                <li>Tested US Healthcare products, involved in requirement gathering, test case writing, and execution with 0 defect leak to production.</li>
-                <li>Contributed to functional, regression, and integration testing, reducing production delivery time by 50%.</li>
-            </ul>
-        </div>
-
-        <!-- Bharat Sanchar Nigam Limited -->
-        <div class="mb-4">
-            <h3>Junior Engineer</h3>
-            <h5>Bharat Sanchar Nigam Limited, Pune | 09/2014 – 11/2015</h5>
-            <ul>
-                <li>Worked on Pune City CCTV Surveillance Project, installing, configuring, and testing over 200 network equipment across 500 locations.</li>
-                <li>Monitored and maintained 150 networks within Pune exchanges, achieving a 95% fault resolution SLA.</li>
-                <li>Managed a team of 10 members, resolving up to 10 faults daily.</li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-
-<!-- Education Section -->
-<section id="education" class="py-5">
-    <div class="container">
-        <h2 class="mb-4">Education</h2>
-
-        <!-- MBA -->
-        <div class="mb-4">
-            <h3>Master of Business Administration (MBA)</h3>
-            <h5>Savitribai Phule Pune University, Pune | 01/2015 – 01/2017</h5>
-            <p>Human Resources Management</p>
-        </div>
-
-        <!-- Bachelor of Engineering -->
-        <div class="mb-4">
-            <h3>Bachelor of Engineering (BE)</h3>
-            <h5>University of Pune, Pune | 01/2009 – 01/2012</h5>
-            <p>Electronics and Telecommunications Engineering</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- Certifications Section -->
-<section id="certifications" class="bg-light py-5">
-    <div class="container">
-        <h2 class="mb-4">Certifications</h2>
-        <ul>
-            <li>Certified ScrumMaster® - Scrum Alliance, Inc.</li>
-            <li>AWS Certified Cloud Practitioner - Amazon Web Services Training and Certification</li>
-            <li>Software Tester Accredited Certification™ - International Software Test Institute™</li>
-            <li>AIGPE Lean Six Sigma White Belt Certification - Advanced Innovation Group Pro Excellence™</li>
-        </ul>
-    </div>
-</section>
-
-<!-- Skills Section -->
-<section id="skills" class="py-5">
-    <div class="container">
-        <h2 class="mb-4">Skills</h2>
-        <div class="row">
-
-            <!-- Technical Skills -->
-            <div class="col-md-4">
-                <h4>Technical Skills</h4>
-                <ul>
-                    <li>Automation Testing (UI, API, DB, Batch)</li>
-                    <li>Cucumber, Gherkin Syntax, Java</li>
-                    <li>AWS Cloud, Jenkins, JIRA, SoapUI</li>
-                    <li>Postman, BurpSuite, CI/CD</li>
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu-container">
+            <!-- Top Navigation Menu -->
+            <div class="topnav">
+                <a href="#home" class="active">&nbsp</a>
+                <!-- Navigation links (hidden by default) -->
+                <ul id="myLinks">
+                    <li><a onclick="scrollToElem('section-home')">Home</a></li>
+                    <li><a onclick="scrollToElem('page-resume')">Resume</a></li>
+                    <li><a onclick="scrollToElem('page-skills')">Skills</a></li>
+                    <li><a onclick="scrollToElem('page-portfolio')">Website Works</a></li>
+                    <li><a onclick="scrollToElem('page-blog')">S/W Projects</a></li>
+                    <li><a onclick="scrollToElem('page-contact')">Contact</a></li>
                 </ul>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a class="icon" id="mobile-btn">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
+        </div>
+        <!-- /MOBILE MENU -->
 
-            <!-- QA Skills -->
-            <div class="col-md-4">
-                <h4>QA Skills</h4>
-                <ul>
-                    <li>White Box and Black Box Testing</li>
-                    <li>Functional and Non-Functional Testing</li>
-                    <li>Regression Testing, Integration Testing</li>
-                    <li>Test Plan Creation, Test Results Reporting</li>
-                </ul>
+        <!-- SECTION: vCard Body  -->
+        <div class="anchor section-vcardbody section-home" id="section-home">
+            <!-- Profile pic-->
+            <div class="vcard-profile-pic">
+                <img src="img/profile2.jpg" id="profile2" alt="" />
+                <img src="img/profile.jpg" id="profile1" class="profileActive" alt="" />
             </div>
+            <!-- /Profile pic -->
+            <!-- Description -->
+            <div class="vcard-profile-description">
+                <!-- Profile title -->
+                <h1 class="profile-title">Hi, I'm <span class="color1">KSK !</span></h1>
+                <h2 class="profile-subtitle"> Short for, Kotapati Sri Krishna Chaitanya.</h2>
+                <!-- /Profile Title -->
+                <!-- Description Text -->
+                <hr class="hr1">
+                <div class="vcard-profile-description-text">
+                    <p> I am a passionate Full Stack Developer. Specialities include Java/J2EE and Javascript.</p>
+                </div>
+                <!--/ Description Text -->
+                <!-- Description feature -->
+                <div class="vcard-profile-description-feature">
+                    <!-- item -->
+                    <div class="vcard-profile-description-ft-item">
+                        <p><i class="fa fa-envelope-o"></i> : <a class="mailto"
+                                                                 href="mailto:srikrishna.kotapati@gmail.com">srikrishna.kotapati@gmail.com</a> &nbsp
+                            &nbsp<i class="fa fa-phone"></i> : <a class="mailto" href="tel:+13108665401">+1 310 866
+                                5401</a></p>
+                    </div>
+                    <!-- item -->
+                </div>
+                <!-- /Description feature -->
+            </div>
+            <!-- /Description -->
+            <!-- Footer -->
+            <div class="vcard-footer">
+                <!-- Social Icons -->
+                <div class="footer-social-icons">
+                    <a href="https://www.instagram.com/kskismyname/" target="_blank"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/KSKCool" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/kskchaitanya93" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/kskchaitanya" target="_blank"><i
+                            class="fa fa-linkedin"></i></a>
+                    <!--a href="https://www.youtube.com/c/kskchaitanya1993" target="_blank"><i class="fa fa-youtube"></i></a-->
+                    <a href="https://github.com/kskchaitanya1993" target="_blank"><i class="fa fa-github"></i></a>
+                </div>
+                <!-- /Social Icons -->
+            </div>
+        </div>
+        <!-- /SECTION: vCard Body  -->
 
-            <!-- Soft Skills -->
-            <div class="col-md-4">
-                <h4>Soft Skills</h4>
-                <ul>
-                    <li>Communication</li>
-                    <li>Time Management</li>
-                    <li>Leadership Abilities</li>
-                    <li>Team Management, Process Improvements</li>
-                    <li>Mentoring, Training</li>
-                </ul>
+        <!-- PAGE: RESUME -->
+        <div class="anchor section-vcardbody section-page" id="page-resume">
+
+
+
+
+            <!-- SECTION: Education -->
+            <div class="section-education">
+                <!-- Section title -->
+                <h2 class="section-title">Resume</h2>
+                <!-- /Section title -->
+
+                <!-- Buttons -->
+                <div class="resume-buttons header-page-buttons">
+                    <!-- Download CV button -->
+                    <a href="files/Resume-Sri-Krishna-Chaitanya-Kotapati.pdf" download
+                       class="btn btn-default btn-default2"><i class="fa fa-download"></i>&nbsp; Download my
+                        resume</a>
+                    <!-- /Download CV button -->
+                    <!-- Get in Touch button -->
+                    <a href="#page-contact" class="btn btn-default btn-default2 link-page"><i
+                            class="fa fa-download"></i>&nbsp; Get in Touch</a>
+                    <!-- /Get in Touch button -->
+                </div>
+                <!-- /Buttons -->
+
+                <!-- SECTION: CERTIFICATION -->
+                <div class="section-education">
+
+                    <h2 class="section-title2"><i class="fa fa-certificate"></i>&nbsp; Certifications</h2>
+
+                    <!-- Resume Item -->
+                    <div class="resume-item">
+                        <!-- Work Place -->
+                        <h3 class="section-item-title-1">AWS</h3>
+                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="d4f8814b-8b15-494b-b411-08104cf4c577" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="af5942f2-e389-4995-8419-7a05f5ee447a" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                    </div>
+                    <!-- /Resume Item -->
+
+                </div>
+                <!--/ SECTION: CERTIFICATION -->
+
+                <!-- SECTION: WORK EXPERIENCE -->
+                <div class="section-education">
+
+                    <h2 class="section-title2"><i class="fa fa-building"></i>&nbsp; Work Experience</h2>
+
+                    <!-- Resume Item -->
+                    <div class="resume-item">
+                        <!-- Work Place -->
+                        <h3 class="section-item-title-1">JP Morgan Chase </h3>
+                        <h6 style="color: #ccc;">(acquired cxLoyalty in Dec 2020) </h6>
+                        <!-- /Work Place -->
+                        <!-- Job Time -->
+                        <h4 class="job">Vice President, Software Engineer - <span class="job-date">Feb 2021 - Present</span></h4>
+                        <!-- /Job Time-->
+                        <!-- content -->
+                        <div class="graduation-description">
+                            <p><strong>Multiple Projects:</strong><br><br>
+
+                                <b>RewardShield</b><br>
+                                - A Fraud Check system which runs when an order is placed and rejects if it sees as
+                                a fraud order<br><br>
+
+                                <b>RewardShield Servicing UI</b><br>
+                                - Application for Fraud Agents to view any 'Quarantined' order and take a decision.
+                                <br><br>
+
+                                - Deployed in AWS. ECS, EC2, Lambda, RDS.
+                                <br><br>
+
+                                - Tools used Jenkins, Spinnaker, Terraform, Docker etc.
+                                <br><br>
+
+                                - Done using Spring
+                                Framework, OracleSQL
+                            </p>
+                        </div>
+                        <!-- /Content -->
+                    </div>
+                    <!-- /Resume Item -->
+
+                    <!-- Resume Item -->
+                    <div class="resume-item">
+                        <!-- Work Place -->
+                        <h3 class="section-item-title-1">cxLoyalty</h3>
+                        <!-- /Work Place -->
+                        <!-- Job Time -->
+                        <h4 class="job">Technical Specialist - <span class="job-date">Sep 2019 - Jan 2021</span>
+                        </h4>
+                        <!-- /Job Time-->
+                        <!-- content -->
+                        <div class="graduation-description">
+                            <p><strong>Multiple Projects:</strong><br><br>
+
+                                <b>MobileOMA</b>
+                                <br>- A loyalty based webapp for multiple clients.<br><br>
+
+                                <b>Rewards Platform Manager</b><br>
+                                - An app to handle multiple rewards/loyalty campaigns for various Automobile Dealers<br><br>
+
+                                <b>Processor Integration</b><br>
+                                - Project aimed to build a system to integrate with multiple third party processors
+                                who would handle the activations and deactivations of Physical/Digital Gift cards
+                                from various merchants.<br><br>
+
+                                - Done using Spring Framework, Angular, OracleSQL.
+                            </p>
+                        </div>
+                        <!-- /Content -->
+                    </div>
+                    <!-- /Resume Item -->
+
+                    <!-- Resume Item -->
+                    <div class="resume-item">
+                        <!-- Work Place -->
+                        <h3 class="section-item-title-1">SmartWorks, LLC</h3>
+                        <!-- /Work Place -->
+                        <!-- Job Time -->
+                        <h4 class="job">Full Stack Developer/Intern - <span class="job-date">Jul 2017 -
+									Aug 2019</span></h4>
+                        <!-- /Job Time-->
+                        <!-- content -->
+                        <div class="graduation-description">
+                            <p><strong>Project:</strong><br><br>
+
+                                <b>ExceedGO</b><br>
+                                - Project aimed to develop a template app which can be used as a base
+                                for any Client for Loyalty based Reward System.<br><br>
+
+                                - Done using Spring, Angular, SQL.
+                            </p>
+                        </div>
+                        <!-- /Content -->
+                    </div>
+                    <!-- /Resume Item -->
+
+                    <!-- Resume Item -->
+                    <div class="resume-item">
+                        <!-- Work Place -->
+                        <h3 class="section-item-title-1">Wiweeki LLC</h3>
+                        <!-- /Work Place -->
+                        <!-- Job Time -->
+                        <h4 class="job">Full Stack Developer/Intern - <span class="job-date">Aug 2016 -
+									Jun 2017</span></h4>
+                        <!-- /Job Time-->
+                        <!-- content -->
+                        <div class="graduation-description">
+                            <p><strong>Project:</strong><br><br>
+
+                                <b>Help Wanted App</b><br>
+                                - Project aimed to develop an app which would help the BlueCollar job seekers find a
+                                job in their surroundings and at the same time can be
+                                used by the ones looking for help.<br><br>
+
+                                - Done using Ionic Framework, AngularJs,
+                                NodeJs, MongoDB.
+                            </p>
+                        </div>
+                        <!-- /Content -->
+                    </div>
+                    <!-- /Resume Item -->
+
+                    <!-- Resume Item -->
+                    <div class="resume-item">
+                        <!-- Work Place -->
+                        <h3 class="section-item-title-1">Edukinect</h3>
+                        <!-- /Work Place -->
+                        <!-- Job Time -->
+                        <h4 class="job">Developer - <span class="job-date">Jan 2013 - May 2013</span></h4>
+                        <!-- /Job Time-->
+                        <!-- content -->
+                        <div class="graduation-description">
+                            <p><strong>Project:</strong><br><br>
+
+                                <b>Health Insurance system</b><br>
+                                - Project aimed to develop a online Health
+                                Insurance System for an organization to maintain all information related to its
+                                employees, claims to insurance companies, settelments against their services and
+                                also other medical records.<br><br>
+
+                                - Done using ASP.Net, C# and MySQL.
+                            </p>
+                        </div>
+                        <!-- /Content -->
+                    </div>
+                    <!-- /Resume Item -->
+
+
+                </div>
+                <!--/ SECTION: WORK EXPERIENCE -->
+
+                <h2 class="section-title2"><i class="fa fa-university"></i>&nbsp; Education</h2>
+
+                <!-- Resume Item -->
+                <div class="resume-item">
+                    <!-- Graduation title -->
+                    <h3 class="section-item-title-1">Masters in Computer Science</h3>
+                    <!-- /Graduation title -->
+                    <!-- Graduation time -->
+                    <h4 class="graduation-time">California State University, Northridge - <span
+                            class="graduation-date">Graduation May 2017</span></h4>
+                    <!-- /Graduation time -->
+                    <!-- content -->
+                    <div class="graduation-description">
+                        <p>GPA: 3.8 with <strong>Honors</strong> <br><br>
+
+                            <b>Courses Taken:</b> <br><br>
+
+                            - Software Engineering<br>
+                            - Graphical User Interface<br>
+                            - Computer System Architecture<br>
+                            - Data Mining<br>
+                            - Advanced Computer Graphics<br>
+                            - Data Structures and Algorithms<br>
+                            - Advanced topics in Software Engineering.<br>
+                            - Human-Computer Interaction<br>
+                            - Web Engineering.<br><br>
+
+                            <b>Final Year Project:</b> <br><br>
+
+
+                            <b>Help Wanted App</b><br>
+                            - Project aimed to develop an app which would help the BlueCollar job seekers find a
+                            job in their surroundings and at the same time can be
+                            used by the ones looking for help.<br><br>
+
+                            - Done using Ionic Framework, AngularJs,
+                            NodeJs, MongoDB.
+                        </p>
+                    </div>
+                    <!-- /Content -->
+                </div>
+                <!-- /Resume Item -->
+
+                <!-- Resume Item -->
+                <div class="resume-item">
+                    <!-- Graduation title -->
+                    <h3 class="section-item-title-1">Bachelors in Computer Science</h3>
+                    <!-- /Graduation title -->
+                    <!-- Graduation time -->
+                    <h4 class="graduation-time">Dr B.V.Raju Institute Of Technology, India - Graduation May 2015
+                    </h4>
+                    <!-- /Graduation time -->
+                    <!-- content -->
+                    <div class="graduation-description">
+                        <p>GPA: 3.70 <br><br>
+
+                            <b>Final Year Project:</b> <br><br>
+
+
+                            <b>Smart Card Solution for Campuses</b>(Cashless Campus and Access Control):<br>
+                            - This is a solution for an institution to keep track of the revenue
+                            generated in various nodes like canteens and food courts, and managing access control on
+                            the fly. Achieved with the help of RFID(Proximity card) sensors<br><br>
+
+                            - Done using C# and
+                            Javascript
+                        </p>
+                    </div>
+                    <!-- /Content -->
+                </div>
+                <!-- /Resume Item -->
+            </div>
+            <!--/ SECTION: Education -->
+
+
+
+
+            <div class="page-footer">
+                <!-- Buttons -->
+                <div class="resume-buttons">
+                    <!-- Download CV button -->
+                    <a href="files/Resume-Sri-Krishna-Chaitanya-Kotapati.pdf" download
+                       class="btn btn-default btn-default2"><i class="fa fa-download"></i>&nbsp; Download my
+                        resume</a>
+                    <!-- /Download CV button -->
+                    <!-- Get in Touch button -->
+                    <a href="#page-contact" class="btn btn-default btn-default2 link-page"><i
+                            class="fa fa-download"></i>&nbsp; Get in Touch</a>
+                    <!-- /Get in Touch button -->
+                </div>
+                <!-- /Buttons -->
+                <!-- Quote -->
+                <p class="footer-quote">“I don't believe in taking right decisions. I take decisions and then make
+                    them right.” <br /><i>- Ratan Tata</i></p>
+                <!-- /Quote -->
             </div>
 
         </div>
+        <!-- /PAGE: RESUME  -->
+
+        <!-- SECTION: SKILLS-->
+        <div class="anchor section-vcardbody section-page" id="page-skills">
+            <div class="section-skills">
+
+                <!-- Section title -->
+                <h2 class="section-title">SKILLS</h2>
+                <!-- /Section title -->
+
+
+
+                <!-- Subtitle -->
+                <h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Code Skills</h3>
+                <!-- /Subtitle -->
+
+                <!-- Skils List -->
+                <ul class="skills-list">
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-3" data-percent="90%" role="progressbar"
+                                 style="width: 90%;">
+                                <span class="sr-only">90% Complete</span>
+                            </div>
+                            <span class="progress-type">Java / Spring</span>
+                            <span class="progress-completed">90%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar" data-percent="85%" role="progressbar" style="width: 85%;">
+                                <span class="sr-only">85% Complete</span>
+                            </div>
+                            <span class="progress-type">HTML5 / CSS / Javascript / Angular</span>
+                            <span class="progress-completed">85%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar" data-percent="75%" role="progressbar"
+                                 style="width: 75%;">
+                                <span class="sr-only">75% Complete</span>
+                            </div>
+                            <span class="progress-type">AWS</span>
+                            <span class="progress-completed">75%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-2" data-percent="75%" role="progressbar"
+                                 style="width: 75%;">
+                                <span class="sr-only">75% Complete</span>
+                            </div>
+                            <span class="progress-type">SQL</span>
+                            <span class="progress-completed">75%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar" data-percent="55%" role="progressbar"
+                                 style="width: 55%;">
+                                <span class="sr-only">55% Complete</span>
+                            </div>
+                            <span class="progress-type">Python / Mongo / Node</span>
+                            <span class="progress-completed">55%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar" data-percent="99%" role="progressbar"
+                                 style="width: 99%;">
+                                <span class="sr-only">99% Complete</span>
+                            </div>
+                            <span class="progress-type">Googling Stuff &#128540;</span>
+                            <span class="progress-completed">99%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+                </ul>
+                <!-- /Skils List -->
+                <!-- Subtitle -->
+                <h3 class="section-item-title-2"><i class="fa fa-laptop"></i>&nbsp;&nbsp; Software Skills</h3>
+                <!-- /Subtitle -->
+
+                <!-- Skils List -->
+                <ul class="skills-list">
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar" data-percent="75%" role="progressbar" style="width: 75%;">
+                                <span class="sr-only">75% Complete</span>
+                            </div>
+                            <span class="progress-type">Adobe Photoshop</span>
+                            <span class="progress-completed">75%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-2" data-percent="35%" role="progressbar"
+                                 style="width: 35%;">
+                                <span class="sr-only">35% Complete</span>
+                            </div>
+                            <span class="progress-type">Adobe Illustrator</span>
+                            <span class="progress-completed">35%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-3" data-percent="40%" role="progressbar"
+                                 style="width: 40%;">
+                                <span class="sr-only">40% Complete</span>
+                            </div>
+                            <span class="progress-type">Adobe After Effects</span>
+                            <span class="progress-completed">40%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+                </ul>
+                <!-- /Skils List -->
+
+                <!-- Subtitle -->
+                <h3 class="section-item-title-2"><i class="fa fa-users"></i>&nbsp;&nbsp; Professional Skills</h3>
+                <!-- /Subtitle -->
+
+                <!-- Skils List -->
+                <ul class="skills-list">
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" data-percent="70%" style="width: 70%;">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                            <span class="progress-type">Comunication</span>
+                            <span class="progress-completed">70%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-2" role="progressbar" data-percent="85%"
+                                 style="width: 85%;">
+                                <span class="sr-only">85% Complete</span>
+                            </div>
+                            <span class="progress-type">Leadership</span>
+                            <span class="progress-completed">85%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+                    <!-- item-list -->
+                    <li>
+                        <div class="progress" title="Doing my best!">
+                            <div class="progress-bar progress-bar-3" role="progressbar" data-percent="95%"
+                                 style="width: 95%;">
+                                <span class="sr-only">95% Complete</span>
+                            </div>
+                            <span class="progress-type">Confidence</span>
+                            <span class="progress-completed">95%</span>
+                        </div>
+                    </li>
+                    <!-- /item list -->
+                </ul>
+                <!-- /Skils List -->
+
+            </div>
+        </div>
+        <!-- /SECTION: SKILLS  -->
+
+        <!-- SECTION: PORTFOLIO-->
+        <div class="anchor section-vcardbody section-page" id="page-portfolio">
+            <div class="section-portfolio">
+
+                <!-- Section title -->
+                <h2 class="section-title">My Website Works</h2>
+                <!-- /Section title -->
+
+                <!-- Projects list -->
+                <div class="projects-list">
+
+                    <!-- item -->
+                    <div class="project-item">
+                        <!-- ==> Put your thumbnail as a background -->
+                        <a href="https://d32ab2e3uveq1.cloudfront.net/" class="project-thumbnail" target="_blank"
+                           data-lightbox-gallery="portfolio"
+                           style="background-image: url('img/portfolio/thumb-p1.jpg');">
+                            <!-- project-description -->
+                            <div class="project-description-wrapper">
+                                <div class="project-description">
+                                    <!-- project name -->
+                                    <h2 class="project-title">Custom Build</h2>
+                                    <!-- /project name -->
+                                    <span class="see-more">Freelance Group's Website</span>
+                                </div>
+                            </div>
+                            <!-- /project-description -->
+                        </a>
+                    </div>
+                    <!-- /item -->
+
+                    <!-- item -->
+                    <div class="project-item">
+                        <!-- ==> Put your thumbnail as a background -->
+                        <a href="http://d20cv8rr7aj09i.cloudfront.net/" class="project-thumbnail" target="_blank"
+                           data-lightbox-gallery="portfolio"
+                           style="background-image: url('img/portfolio/thumb-p2.jpg');">
+                            <!-- project-description -->
+                            <div class="project-description-wrapper">
+                                <div class="project-description">
+                                    <!-- project name -->
+                                    <h2 class="project-title">Zealotz</h2>
+                                    <!-- /project name -->
+                                    <span class="see-more">College cultural fest Website</span>
+                                </div>
+                            </div>
+                            <!-- /project-description -->
+                        </a>
+                    </div>
+                    <!-- /item -->
+
+                    <!-- item -->
+                    <div class="project-item">
+                        <!-- ==> Put your thumbnail as a background -->
+                        <a href="http://omahaaudio.co.nf/" class="project-thumbnail nivobox" target="_blank"
+                           data-lightbox-gallery="portfolio"
+                           style="background-image: url('img/portfolio/thumb-p3.jpg');">
+                            <!-- project-description -->
+                            <div class="project-description-wrapper">
+                                <div class="project-description">
+                                    <!-- project name -->
+                                    <h2 class="project-title">Omaha Audio</h2>
+                                    <!-- /project name -->
+                                    <span class="see-more">Audio porduct shopping website (Proof of concept)</span>
+                                </div>
+                            </div>
+                            <!-- /project-description -->
+                        </a>
+                    </div>
+                    <!-- /item -->
+
+
+
+
+                </div>
+                <!-- /projects list -->
+
+            </div>
+        </div>
+        <!-- /SECTION: PORTFOLIO  -->
+
+        <!-- SECTION: BLOG-->
+        <div class="anchor section-vcardbody section-page" id="page-blog">
+            <div class="section-blog">
+
+                <!-- Section title -->
+                <h2 class="section-title">My Software Projects</h2>
+                <!-- /Section title -->
+
+                <!-- BLOG POSTS -->
+                <div class="blog-posts">
+                    <!-- blog-item -->
+                    <div class="blog-item">
+                        <div class="blog-item-wrapper">
+                            <!-- blog item thumbnail -->
+                            <div class="blog-item-thumb">
+                                <img src="img/blog3.jpg" alt="">
+                            </div>
+                            <!-- /blog item thumbnail -->
+                            <!-- Blog item - infos -->
+                            <div class="blog-item-infos">
+                                <!-- blog-item-title -->
+                                <div class="blog-item-title-wrapper">
+                                    <h2 class="blog-item-title title-border">Roll a BB8 Game using Unity</h2>
+                                </div>
+                                <!-- /blog-item-title -->
+                                <!-- blog item - description -->
+                                <div class="blog-item-description">
+                                    <p>A game inspired from "Roll a Ball" game but with a BB8. Was developed using
+                                        Unity3D. Available for Windows and Android.</p>
+                                </div>
+                                <!-- /blog-item-description -->
+                                <!-- blog item - link -->
+                                <div class="blog-item-link">
+                                    <a href="https://drive.google.com/open?id=0B3luzVgmw3p7a3ZZSDFLNm1ycjQ"
+                                       target="_blank" class="btn btn-default ">Download for Windows</a><br>
+                                    <a href="https://drive.google.com/open?id=0B3luzVgmw3p7Q2g0ZEx3c2NMUDg"
+                                       target="_blank" class="btn btn-default ">Download for Android</a><br>
+                                    <a href="https://github.com/kskchaitanya1993/BB8-Game" target="_blank"
+                                       class="btn btn-default ">See Code on GitHub</a>
+                                </div>
+                                <!-- /blog item - link -->
+                            </div>
+                            <!-- /blog item - infos -->
+                        </div>
+                    </div>
+                    <!-- /blog-item -->
+
+                    <!-- blog-item -->
+                    <div class="blog-item">
+                        <div class="blog-item-wrapper">
+                            <!-- blog item thumbnail -->
+                            <div class="blog-item-thumb">
+                                <img src="img/blog1.jpg" alt="">
+                            </div>
+                            <!-- /blog item thumbnail -->
+                            <!-- Blog item - infos -->
+                            <div class="blog-item-infos">
+                                <!-- blog-item-title -->
+                                <div class="blog-item-title-wrapper">
+                                    <h2 class="blog-item-title title-border">FreeCell Game using Java</h2>
+                                </div>
+                                <!-- /blog-item-title -->
+                                <!-- blog item - description -->
+                                <div class="blog-item-description">
+                                    <p>A normal FreeCell game you see in Windows PC's. Take in the 52 deck of cards,
+                                        shuffle them and display so that the user can move them around and finally
+                                        arrange them in order.</p>
+                                </div>
+                                <!-- /blog-item-description -->
+                                <!-- blog item - link -->
+                                <div class="blog-item-link">
+                                    <a href="https://github.com/kskchaitanya1993/FreeCell" target="_blank"
+                                       class="btn btn-default ">See Code on GitHub</a>
+
+                                </div>
+                                <!-- /blog item - link -->
+                            </div>
+                            <!-- /blog item - infos -->
+                        </div>
+                    </div>
+                    <!-- /blog-item -->
+
+                    <!-- blog-item -->
+                    <div class="blog-item">
+                        <div class="blog-item-wrapper">
+                            <!-- blog item thumbnail -->
+                            <div class="blog-item-thumb">
+                                <img src="img/blog2.jpg" alt="">
+                            </div>
+                            <!-- /blog item thumbnail -->
+                            <!-- Blog item - infos -->
+                            <div class="blog-item-infos">
+                                <!-- blog-item-title -->
+                                <div class="blog-item-title-wrapper">
+                                    <h2 class="blog-item-title title-border">Simple Text Editor using Java</h2>
+                                </div>
+                                <!-- /blog-item-title -->
+                                <!-- blog item - description -->
+                                <div class="blog-item-description">
+                                    <p>A basic text editor having basic functions of user typing in the data, saving
+                                        the file, opening a new file, cut,copy,paste, search and replace a word,
+                                        change colors, font, font size of the selected text.</p>
+                                </div>
+                                <!-- /blog-item-description -->
+                                <!-- blog item - link -->
+                                <div class="blog-item-link">
+                                    <a href="https://github.com/kskchaitanya1993/JTextEditor" target="_blank"
+                                       class="btn btn-default ">See Code on GitHub</a>
+                                </div>
+                                <!-- /blog item - link -->
+                            </div>
+                            <!-- /blog item - infos -->
+                        </div>
+                    </div>
+                    <!-- /blog-item -->
+
+
+
+
+                </div>
+                <!-- /BLOG POSTS -->
+                <!-- Pagination -->
+                <!--div class="section-pagination">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <span class="pagination-numbers">
+                            <a href="#">1</a>
+                        </span>
+                    </div>
+                </div>
+            </div-->
+                <!-- /Pagination -->
+            </div>
+        </div>
+        <!-- /SECTION: BLOG  -->
+
+
+
+        <!-- SECTION: CONTACT-->
+        <div class="anchor section-vcardbody section-page" id="page-contact">
+            <div class="section-contact">
+
+                <!-- Section title -->
+                <h2 class="section-title">Contact</h2>
+                <!-- /Section title -->
+
+                <!-- Contact infos -->
+                <div class="contact-infos">
+                    <h4 class="contact-subtitle-1"><i class="fa fa-envelope"></i>&nbsp; Mail</h4>
+                    <p><a class="mailto"
+                          href="mailto:srikrishna.kotapati@gmail.com">srikrishna.kotapati@gmail.com</a></p>
+                    <h4 class="contact-subtitle-1"><i class="fa fa-phone-square"></i>&nbsp; Phone</h4>
+                    <p><a class="mailto" href="tel:+13108665401">+1 310 866 5401</a></p>
+                    <h4 class="contact-subtitle-1"><i class="fa fa-map"></i>&nbsp; Location</h4>
+                    <p>Richmond, Virginia</p>
+                </div>
+                <!-- /Contact infos -->
+                <br><br>
+                <div class="map">
+                    <div class="map-overlay"></div>
+                    <iframe
+                            src="https://www.google.com/maps/embed/v1/view?zoom=11&center=37.7101%2C-77.5734&key=AIzaSyDuHJsSoHxPcfDn07-wAGFwH-NaXCrnGek"
+                            height="250" style="border:0" allowfullscreen></iframe>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- /SECTION: CONTACT  -->
     </div>
+
 </section>
+<!-- /Main Content
+================================================== -->
 
-<!-- Contact Section -->
-<section id="contact1" class="bg-light py-5">
-    <div class="container">
-        <h2 class="mb-4">Contact</h2>
-        <form id="contactForm">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-        <div id="formMessage" class="mt-3"></div>
+<!-- Contact Form - Ajax Messages
+========================================================= -->
+<!-- Form Sucess -->
+<div class="form-result modal-wrap" id="contactSuccess">
+    <div class="modal-bg"></div>
+    <div class="modal-content">
+        <h4 class="modal-title"><i class="fa fa-check-circle"></i> Success!</h4>
+        <p>Your message has been sent to us.</p>
     </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-        <p>&copy; 2024 Abhijeet Chavan. All rights reserved.</p>
-        <p>
-            <a href="https://www.linkedin.com/in/abhijeetchavan" class="text-white me-2" target="_blank">LinkedIn</a>
-            <a href="mailto:chavan.abhijeet.m@gmail.com" class="text-white me-2">Email</a>
-            <a href="tel:8208128355" class="text-white">Phone</a>
-        </p>
+</div>
+<!-- /Form Sucess -->
+<!-- form-error -->
+<div class="form-result modal-wrap" id="contactError">
+    <div class="modal-bg"></div>
+    <div class="modal-content">
+        <h4 class="modal-title"><i class="fa fa-times"></i> Error</h4>
+        <p>There was an error sending your message.</p>
     </div>
-</footer>
+</div>
+<!-- /form-error -->
 
-<!-- Bootstrap JS and dependencies -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom JS -->
-<script src="js/scripts.js"></script>
+<!-- Contact Form - Ajax Messages
+========================================================= -->
+
+
+<!-- >> JS
+============================================================================== -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="vendor/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/validate.js"></script>
+<!-- Holder JS -->
+<script src="vendor/holder.js"></script>
+<!-- Modal box-->
+<script src="vendor/nivo-lightbox/nivo-lightbox.min.js"></script>
+<!-- /Modal Box -->
+<!-- Perfect ScrolBar -->
+<script src="vendor/perfect-scrollbar/js/min/perfect-scrollbar.jquery.min.js"></script>
+<!-- /Perfect ScrolBar -->
+<!-- Owl Caroulsel -->
+<script src="vendor/owl.carousel/owl-carousel/owl.carousel.js"></script>
+<!-- Google Maps -->
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<!-- Cross-browser -->
+<script src="vendor/cross-browser.js"></script>
+<!-- Main Scripts -->
+<script src="js/main.js"></script>
+<!-- >> /JS
+============================================================================= -->
 </body>
+
 </html>
