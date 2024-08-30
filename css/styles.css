@@ -7,7 +7,7 @@ html {
 
 /* Home Section */
 #home {
-  background-image: url('../assets/images/header.jpg'); /* Replace with your own image */
+  background-image: url('/assets/images/header.jpg'); /* Replace with your own image */
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -16,6 +16,11 @@ html {
 body {
   background-color: #f0f8ff; /* Light Blue */
   color: #333; /* Darker Text */
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  color: #333;
 }
 
 .header, .footer {
@@ -31,13 +36,23 @@ section h2 {
 }
 
 /* Footer Links */
-footer a {
-  text-decoration: none;
-}
 
 footer a:hover {
   text-decoration: underline;
 }
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+}
+
 
 @media (max-width: 768px) {
   .header {
@@ -52,4 +67,49 @@ footer a:hover {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+#hero {
+  background: url('/assets/images/bg1.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+#hero h1 {
+  font-size: 4em;
+}
+
+#hero .btn {
+  font-size: 1.2em;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.service, .testimonial {
+  margin-bottom: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.testimonial {
+  border-left: 5px solid #007bff;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
 
