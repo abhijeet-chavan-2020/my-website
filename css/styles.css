@@ -7,7 +7,7 @@ html {
 
 /* Home Section */
 #home {
-  background-image: url('../assets/home-bg.jpg'); /* Replace with your own image */
+  background-image: url('../assets/images/header.jpg'); /* Replace with your own image */
   background-size: cover;
   background-position: center;
   color: #fff;
