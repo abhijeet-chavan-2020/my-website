@@ -16,6 +16,6 @@ gem "github-pages", "~> 227", group: :jekyll_plugins
  gem "minima", "~> 2.5"
 
 # Optional: For pagination, syntax highlighting, etc.
- gem "jekyll-paginate", "~> 2.0"
+ gem "jekyll-paginate", "~> 1.1.0"
  gem "jekyll-feed", "~> 0.15"
  gem "jekyll-archives", "~> 2.2"
