@@ -1,0 +1,90 @@
+/* assets/css/style.css */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* assets/css/style.css */
+#hero {
+  background: url('/assets/images/header.jpg') no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 100px 20px;
+}
+
+#hero h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+#hero p {
+  font-size: 1.5em;
+}
+
+#hero .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* assets/css/style.css */
+section {
+  padding: 50px 20px;
+}
+
+.service, .testimonial {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  border-left: 5px solid #007bff;
+}
+
+/* assets/css/style.css */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social-media {
+  margin-top: 10px;
+}
+
+
