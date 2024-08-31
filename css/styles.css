@@ -723,7 +723,7 @@ html {
   border: none;
   height: 1px;
   width: 100%;
-  background: url('../img/hr1.png') no-repeat center center;
+  background: url('../img/bg1.png') no-repeat center center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -739,6 +739,9 @@ html {
   margin-bottom: 0;
   color: #ffffff;
   font-size: 10px;
+}
+.vcard-profile-description {
+    text-align: center;
 }
 /* ==========================================================
 ! 09. Content
