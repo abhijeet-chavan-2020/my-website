@@ -765,7 +765,7 @@ html {
   letter-spacing: -1px;
   padding-bottom: 10px;
   padding-left: 15px;
-  padding-top: 5px;
+  padding-top: 5px;AWS
   padding-bottom: 5px;
   border-left: 4px solid #ccc;
 }
@@ -811,6 +811,23 @@ html {
 .graduation-description p {
   font-size: 12px;
   color: #aaa;
+}
+
+.helping-section p {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.section-item-title-helping {
+  font-weight: bold;
+  color: #aaa;
+  padding-left: 0;
+  margin-left: 0;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
 }
 /*============================================================================
   >>  10. SECTION: Resume
